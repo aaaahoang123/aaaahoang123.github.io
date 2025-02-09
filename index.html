@@ -28,6 +28,19 @@
             }
         </style>
     </noscript>
+    <style>
+        @media print {
+            .timeline-card {
+                page-break-inside: avoid;
+                break-inside: avoid;
+                display: table;
+                width: 100%;
+            }
+            .mb-1 {
+                margin-bottom: 0;
+            }
+        }
+    </style>
 </head>
 <body id="top">
 <header class="d-print-none">
@@ -64,61 +77,58 @@
                         <div class="avatar hover-effect bg-white shadow-sm p-1"><img alt="avatar" src="images/avatar.png" width="200"
                                                                                      height="200"/></div>
                     </div>
-                    <div class="col-lg-8 col-md-7 text-center text-md-start">
+                    <div class="col-lg-4 col-md-3 text-center text-md-start">
                         <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Hoang Do</h2>
-                        <p data-aos="fade-left" data-aos-delay="100">Senior fullstack developer / Technical Leader</p>
+                        <p data-aos="fade-left" data-aos-delay="100">Technical Leader / Software Architect</p>
                         <div class="d-print-none" data-aos="fade-left" data-aos-delay="200"><a
                                 class="btn btn-light text-dark shadow-sm mt-1 me-1" href="javascript:void(0)"
                                 onclick="window.print()">Download CV</a><a class="btn btn-success shadow-sm mt-1"
                                                                   href="#contact">Hire Me</a></div>
                     </div>
-                </div>
-            </div>
-            <div class="about-section pt-4 px-3 px-lg-4 mt-1">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="h3 mb-3">About Me</h2>
-                        <p>- Software developers, with 6 years of experience of web system development using Java, PHP, NodeJS,...</p>
-                        <p>- Good knowledge in Object-Oriented Programming.</p>
-                        <p>- Experienced in systems design using Domain Driven Designs and various Design Patterns.</p>
-                        <p>- Experienced with design microservices systems using Kong, Kafka, Eureka Services Registry, Camunda workflows (Zeebe),...</p>
-                        <p>- Experienced with design and optimize RDBMS like MySQL, Postgres,... or NOSQL DB like mongodb.</p>
-                        <p>- Good at frontend development using React/Angular/VueJS, or just vanilla JS.</p>
-                        <p>- Have abilities to research and apply new technologies.</p>
-                        <p>- Experienced in member training, directed product technology strategies in the role of Technical Leader.</p>
-                        <p>- Experienced in delving deeply and optimizing systems in the role of Software Architect.</p>
-                    </div>
-                    <div class="col-md-5 offset-md-1">
+                    <div class="col-lg-4 col-md-4 text-center text-white mt-3 pii">
                         <div class="row mt-2">
                             <div class="col-sm-4">
                                 <div class="pb-1">DOB</div>
                             </div>
                             <div class="col-sm-8">
-                                <div class="pb-1 text-secondary">02/01/1994</div>
+                                <div class="pb-1">02/01/1994</div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="pb-1">Email</div>
                             </div>
                             <div class="col-sm-8">
-                                <div class="pb-1 text-secondary">hoangdo.2194@gmail.com</div>
+                                <div class="pb-1">hoangdo.2194@gmail.com</div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="pb-1">Phone</div>
                             </div>
                             <div class="col-sm-8">
-                                <div class="pb-1 text-secondary">+84 35 537 4643</div>
+                                <div class="pb-1">+84 35 537 4643</div>
                             </div>
                             <div class="col-sm-4">
                                 <div class="pb-1">Address</div>
                             </div>
                             <div class="col-sm-8">
-                                <div class="pb-1 text-secondary">Ha Noi, Viet Nam</div>
+                                <div class="pb-1">Ha Noi, Viet Nam</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+                <h2 class="h3">About Me</h2>
+                <p>- Software developers, with 6 years of experience of web system development using Java, PHP, NodeJS,...</p>
+                <p>- Good knowledge in Object-Oriented Programming.</p>
+                <p>- Experienced in systems design using Domain Driven Designs and various Design Patterns.</p>
+                <p>- Experienced with design microservices systems using Kong, Kafka, Eureka Services Registry, Camunda workflows (Zeebe),...</p>
+                <p>- Experienced with design and optimize RDBMS like MySQL, Postgres,... or NOSQL DB like mongodb.</p>
+                <p>- Good at frontend development using React/Angular/VueJS, or just vanilla JS.</p>
+                <p>- Have abilities to research and apply new technologies.</p>
+                <p>- Experienced in member training, directed product technology strategies in the role of Technical Leader.</p>
+                <p>- Experienced in delving deeply and optimizing systems in the role of Software Architect.</p>
+            </div>
             <hr class="d-print-none"/>
+<!--            <div class="page-break"></div>-->
             <div class="skills-section px-3 px-lg-4">
                 <h2 class="h3 mb-3">Professional Skills</h2>
                 <div class="timeline">
@@ -158,7 +168,6 @@
                 </div>
             </div>
             <hr class="d-print-none"/>
-            <div class="page-break"></div>
             <div class="work-experience-section px-3 px-lg-4">
                 <h2 class="h3 mb-4">Work Experience</h2>
                 <div class="timeline">
@@ -166,17 +175,7 @@
                         <div class="card-body">
                             <div class="h5 mb-1">Software Architect <span class="text-muted h6">at <a
                                     href="https://www.topcv.vn/" target="_blank">TopCV Viet Nam</a></span></div>
-                            <div>
-                                <p class="mb-1">- Role: Software Architect.</p>
-                                <p class="mb-1">- Team size: 2.</p>
-                                <div class="h6 mb-1 mt-2">
-                                    Key Contributions:
-                                </div>
-                                <p class="mb-1 mx-1">- Researched and optimized systems to reduce cloud service costs, achieving significant operational savings.</p>
-                                <p class="mb-1 mx-1">- Monitored and identified performance bottlenecks and security vulnerabilities, providing actionable recommendations to enhance system reliability and safety.</p>
-                                <p class="mb-1 mx-1">- Implemented system improvements leveraging expertise in databases, caching mechanisms, search engines, and prebuilt data solutions.</p>
-                                <p class="mb-1 mx-1">- Collaborated with tech leads and developers to transfer knowledge of new technologies and solutions, addressing critical business and technical challenges.</p>
-                            </div>
+                            <div class="text-muted text-small">Since 2023</div>
                         </div>
                     </div>
 
@@ -184,11 +183,40 @@
                         <div class="card-body">
                             <div class="h5 mb-1">Technical Leader <span class="text-muted h6">at <a
                                     href="https://www.topcv.vn/" target="_blank">TopCV Viet Nam</a></span></div>
-                            <div class="text-muted text-small mb-2">Jun, 2021 - Present</div>
+                            <div class="text-muted text-small">Since 2021</div>
                             <div>
-                                <div class="h6 mb-1 color-primary">
-                                    Project: TopCV ERP
+                                <div class="h6 mb-1 mt-2">
+                                    Tech stack:
                                 </div>
+                                <p class="mb-1">Java, PHP, NodeJS, ReactJS, Angular, MySQL, MongoDB, Postgres, Kafka, Kafka Connect, Elasticsearch, Docker, K8s, GCP,...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1">End-to-End Web Developer <span class="text-muted h6">at <a
+                                    href="https://amitgroup.vn/" target="_blank">Amit Group</a></span></div>
+                            <div class="text-muted text-small mb-2">September, 2018 - January, 2021</div>
+                            <div>
+                                <div class="h6 mb-1 mt-2">
+                                    Tech stack:
+                                </div>
+                                <p class="mb-1">Java (Spring Boot), PHP (Laravel), Angular, MySQL, Redis, Docker, JWT, ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-break"></div>
+            <hr class="d-print-none"/>
+            <div class="work-experience-section px-3 px-lg-4">
+                <h2 class="h3 mb-4">Projects</h2>
+                <div class="timeline">
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1">TopCV ERP</div>
+                            <div>
                                 <p class="mb-1">- Role: Technical Leaders.</p>
                                 <p class="mb-1">- Team size: 10.</p>
 
@@ -210,10 +238,13 @@
                                 <p class="mb-1">- Conducted code reviews and ensured adherence to quality standards.</p>
                             </div>
 
-                            <div class="mt-4">
-                                <div class="h6 mb-1 color-primary">
-                                    Project: TopCV Internal Operating System
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1">TopCV Internal Operating System</div>
+                            <div>
                                 <p class="mb-1">- Role: Technical Leaders.</p>
                                 <p class="mb-1">- Team size: 10.</p>
                                 <div class="h6 mb-1 mt-2">
@@ -235,10 +266,13 @@
                                 <p class="mb-1">- Conducted code reviews, ensured quality standards, and made decisions on optimization or refactoring when necessary.</p>
                             </div>
 
-                            <div class="mt-4">
-                                <div class="h6 mb-1 color-primary">
-                                    Project: <a href="https://www.topcv.vn" target="_blank">www.topcv.vn</a>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1"><a href="https://www.topcv.vn" target="_blank">www.topcv.vn</a></div>
+                            <div>
                                 <p class="mb-1">- Role: Senior Software Engineer.</p>
                                 <p class="mb-1">- Team size: 6.</p>
                                 <div class="h6 mb-1 mt-2">
@@ -264,10 +298,13 @@
                                 <p class="mb-1">- Support team members in improving coding skills and programming mindset.</p>
                             </div>
 
-                            <div class="mt-4">
-                                <div class="h6 mb-1 color-primary">
-                                    Project: <a href="https://tuyendung.topcv.vn" target="_blank">tuyendung.topcv.vn</a>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1"><a href="https://tuyendung.topcv.vn" target="_blank">tuyendung.topcv.vn</a></div>
+                            <div>
                                 <p class="mb-1">- Role: Senior Software Engineer.</p>
                                 <p class="mb-1">- Team size: 12.</p>
                                 <div class="h6 mb-1 mt-2">
@@ -292,17 +329,14 @@
                                 <p class="mb-1">- Review and merge code from other team members.</p>
                                 <p class="mb-1">- Support team members in improving coding skills and programming mindset.</p>
                             </div>
+
                         </div>
                     </div>
+
                     <div class="timeline-card timeline-card-primary card shadow-sm">
                         <div class="card-body">
-                            <div class="h5 mb-1">Web Developer <span class="text-muted h6">at <a
-                                    href="https://amitgroup.vn/" target="_blank">Amit Group</a></span></div>
-                            <div class="text-muted text-small mb-2">September, 2018 - January, 2021</div>
+                            <div class="h5 mb-1"><a href="https://hoangcongcar.com">Hoang Cong Car</a></div>
                             <div>
-                                <div class="h6 mb-1 color-primary">
-                                    Project: <a href="https://hoangcongcar.com">Hoang Cong Car</a>
-                                </div>
                                 <p class="mb-1">- Role: End-to-End Developer.</p>
                                 <p class="mb-1">- Team size: 2.</p>
 
@@ -325,12 +359,41 @@
                                 <p class="mb-1">- Packaged and deployed the product across various environments, including beta and production, ensuring smooth deployment and issue-free transitions.</p>
                                 <p class="mb-1">- Debugged, monitored, and maintained the product post-deployment, ensuring continuous performance optimization and timely updates based on customer needs.</p>
                             </div>
+
+                        </div>
+                    </div>
+
+                    <div class="timeline-card timeline-card-primary card shadow-sm">
+                        <div class="card-body">
+                            <div class="h5 mb-1">Pan-United's E-Caf</div>
+                            <div>
+                                <p class="mb-1">- Role: End-to-End Developer.</p>
+                                <p class="mb-1">- Team size: 7.</p>
+
+                                <div class="h6 mb-1 mt-2">
+                                    Overview:
+                                </div>
+                                <p class="mb-1">The Pan-United investment organization from Singapore requires a loan/investment request management system with a multi-layer approval mechanism, a flexible and easily updatable workflow. The system should be built using a microservices architecture with Java and MSSQL, ensuring performance and security compliance.</p>
+                                <div class="h6 mb-1 mt-2">
+                                    Tech stack:
+                                </div>
+                                <p class="mb-1">Java (Spring Boot), Angular, MSSQL, Redis, Elasticsearch, Camunda Zeebe, Docker, JWT, ...</p>
+                                <div class="h6 mb-1 mt-2">
+                                    Key Responsibilities:
+                                </div>
+                                <p class="mb-1">- Proposed optimized solutions for resource allocation and cost management, helping reduce operational costs while enhancing system performance.</p>
+                                <p class="mb-1">- Designed the system architecture, database structure, and user interface, ensuring scalability, security, and high usability.</p>
+                                <p class="mb-1">- Implemented backend systems, developed APIs for interaction with the mobile app, ensuring smooth data synchronization and integration.</p>
+                                <p class="mb-1">- Conducted product testing (QA) prior to handover, ensuring the product's stability and quality.</p>
+                                <p class="mb-1">- Packaged and deployed the product across various environments, including beta and qc, ensuring smooth deployment and issue-free transitions.</p>
+                                <p class="mb-1">- Debugged, monitored, and maintained the product post-deployment, ensuring continuous performance optimization and timely updates based on customer needs.</p>
+                                <p class="mb-1">- Write system design documentation and be responsible for handing over the complete product design to the client's technical team.</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <hr class="d-print-none"/>
-            <div class="page-break"></div>
 <!--            <div class="education-section px-3 px-lg-4 pb-4">-->
 <!--                <h2 class="h3 mb-4">Education</h2>-->
 <!--                <div class="timeline">-->
